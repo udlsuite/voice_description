@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity: Image Description</title>
+    <link rel="stylesheet" href="css/image_description.css">
+    <script defer src="js/image_description.js"></script>
+</head>
+<body>
+    <div id="image-description-main-container">
+        <div id="image-description-header">
+            <h1>Describing images</h1>
+            <img src="img/hg_logo.svg" id="hg-logo" alt="holmesglen logo">
+        </div>
+
+        <div id="image-description-instructions">
+            <p id="image-instructions-p">Look at the image and think of a one sentence description for it. Then click <em>Start</em> and verbally describe the picture. After you see your description appear, click the <em>Compare</em> button.</p>
+        </div>
+
+        <div id="image-description-activity-container">
+        <img src="https://mindfulbalance.org/wp-content/uploads/2011/03/spring-sunshine-tangledwing.png" alt="Spring sunshine with a tangled wing">
+
+            <div id="secondary-image-description-container">
+                <div id="mode-waveform-container">
+                    <div id="mode-wrapper">
+                        <span class="input-icon" id="mode-icon">🎙</span>
+
+                        <button id="switch-to-typing">I prefer to type</button>
+
+                        <div id="control-buttons">
+                            <button id="start-button" onclick="startRecognition()">Start</button>
+                            <button id="compare-button" disabled>Compare</button>
+                        </div>
+                    </div>
+                    <!-- Typing mode input with icon -->
+                    <div id="typing-container" class="input-with-icon" style="display: none;">
+                        <textarea id="typing-input" placeholder="Type your description here..."></textarea>
+                    </div>
+
+                    <!-- Speech mode result with icon -->
+                    <p id="result" aria-placeholder="This is where the text will appear"></p>
+                    <canvas id="waveform"></canvas>
+                </div>
+
+                <div id="image-description-feedback-container">
+                    <p><strong>Feedback</strong> <span id="image-description-feedback"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
