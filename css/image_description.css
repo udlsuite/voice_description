@@ -147,7 +147,7 @@ h2 {
 
 #typing-input {
   height: 170px;
-  font-size: 1em;
+  font-size: 1.2em;
   resize: none;
 }
 
@@ -204,9 +204,17 @@ h2 {
 }
 
 #image-description-feedback-container p{
+  /* font-size: 1.3em; */
   max-width: 400px;
 }
 
+#image-description-feedback p{
+  font-size: 1.2em;
+}
+
+#feedback_heading{
+  font-size: 1.3em;
+}
 
 
 
